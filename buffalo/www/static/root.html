@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="root_doc" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- EXTJS LIBS -->
+		<script type="text/javascript" src="ext/adapter/ext/ext-base.js"></script>
+		<script type="text/javascript" src="ext/ext-all.js"></script>
+		
+		<!-- EXTJS LIBS END -->
+
+		<!-- CSS LIBS -->
+		<link rel="stylesheet" type="text/css" href="_css/common.css" />
+	 	<link rel="stylesheet" type="text/css" href="_css/images.css" />
+	 	<link rel="stylesheet" type="text/css" href="ext/resources/css/ext-all.css" />
+	 	<link rel="stylesheet" type="text/css" href="ext-ux/ext-fixes.css" />
+		<!-- CSS LIBS END -->
+
+		<!-- <script language="javascript" type="text/javascript" src="firebug_lite/firebug/firebug.js"></script> -->
+		<script type="text/javascript">
+			if (Ext.isIE6){
+				document.write('<link rel="stylesheet" type="text/css" href="_css/main_ie_6.css" />');
+			}
+			else {
+				document.write('<link rel="stylesheet" type="text/css" href="_css/main.css" />');
+			}
+		</script>
+
+		<!-- BUFFALO LIBS -->
+		<script type="text/javascript" src="ext-ux/MessageBox.js"></script>
+		<script type="text/javascript" src="menus/utils/common.js"></script>
+		<script type="text/javascript" src="authentication/login_utils.js"></script>
+		<script type="text/javascript" src="menus/utils/common_vars.js"></script>	
+		<script type="text/javascript" src="menus/utils/grid-utils/grid-utils.js"></script> 
+		<script type="text/javascript" src="menus/utils/form-utils/form-utils.js"></script> 
+		<script type="text/javascript" src="menus/utils/message.js"></script> 
+		<script type="text/javascript" src="menus/utils/help.js"></script>
+		<script type="text/javascript" src="ext-ux/Label.js"></script>
+		<script type="text/javascript" src="ext-ux/Ext.ux.RadioSelectionModel.js"></script>
+		<script type="text/javascript" src="ext-ux/FileUploadField.js"></script>
+		<script type='text/javascript' src='root/leftPanel.js'></script>
+
+		<script type='text/javascript' src='menus/usrGrpMnt/fileUpload_test.js'></script>
+
+		<!-- Also declared in index.html -->
+		<script type="text/javascript" src="cfg/vars.js"></script>
+		<script type="text/javascript" src="root/root.js"></script>
+		<!-- other libs are loaded in root.js, see the script for more details -->
+		<!-- BUFFALO LIBS END -->
+		
+		<script type="text/javascript">
+			Ext.BLANK_IMAGE_URL = "ext/resources/images/default/s.gif";
+			loadSharedFoldersFiles();
+			loadNetworkFiles();
+			loadSystemFiles();
+			loadUsrGrpFiles();
+			loadIscsiVolumesFiles();
+			loadBasicFiles();
+			loadStatusFiles();
+//			loadExtensionsFiles();
+
+			function update_left_panel_height(){
+				var leftBar = Ext.get('left_sidebar');
+				leftBar.setHeight('100px');
+			}
+		</script>
+
+		<script type="text/javascript">
+			userLoginId = getPageModeFromCookie();
+			userLoginName = getNameFromCookie();
+			var lang = getLangFromCookie();
+
+			if (!lang) {
+				failRedirect();
+			}
+			else {
+				create_features_obj();
+				featureList.load({
+					callback: function() {
+						get_features();
+						select_logo();
+						importLang(lang);
+						
+						if (lang != 'en') {
+							langDictionary_en.load();
+						}
+						langDictionary.load({
+							callback: function(){
+								load_extjs_customized_locale();
+								Ext.MessageBox.wait(S('Please Wait...'));
+								request_operation();
+							}
+						});
+					}
+				});
+			}
+		</script>
+	</head>
+
+	<!-- <body onresize="update_left_panel_height()"> -->
+	<body>
+		<iframe id="upload_target" name="upload_target" src="" style="width:0;height:0;border:0px solid #fff;"></iframe>
+
+		<!-- container begin -->
+		<div id="container">
+			<!-- header begin -->
+			<div id="header">
+				<!-- header Inner begin -->
+				<div id="header_inner">
+					<ul>
+						<p id="acct_login"></p>
+						<div id="dev_logo"></div>
+						<div id="buff_logo"><span>Buffalo</span></div>
+					</ul>
+
+					<h3 class="hidden">Main Menu</h3>
+				</div>
+				<!-- header Inner end -->
+
+				<!-- top Menus begin -->
+				<div id="top_menus">
+					<ul id="section_menu" class="section_menu"></ul>
+					<ul id="section_sub_menu" class="section_sub_menu"></ul>
+				</div>
+				<!-- top Menus end -->
+			</div>
+			<!-- header end -->
+
+			<!-- left Sidebar begin -->
+			<div id="left_sidebar">
+				<!-- left Sidebar Inner begin -->
+				<div id="left_sidebar_inner">
+				<!--  iscsi section begin -->
+					<div id="iscsi">
+					</div>
+				<!--  iscsi section ends -->
+					<!-- system Information begin -->
+					<div id="system_information">
+						<div id="system_information_header">
+							<div id='content_left'></div>
+						</div>
+						<!-- system Information Inner begin -->
+						<div id="system_information_inner"></div>
+						<!-- system Information Inner end -->
+					</div>
+					<!-- system Information end -->
+
+					<!-- firmware update begin -->
+					<div id="firmware_update">
+						<div id="firmware_update_header"></div>
+						<!-- firmware_update Inner begin -->
+						<div id="firmware_update_inner"></div>
+						<!-- firmware_update Inner end -->
+					</div>
+					<!-- firmware update end -->
+
+					<!-- menu_information begin -->
+					<div id="menu_information">
+						<div id="menu_information_innerHeader"></div>
+						<!-- menu_information Inner begin -->
+						<div id="menu_information_inner"></div>
+						<!-- menu_information Inner end -->
+					</div>
+					<!-- menu_information end -->
+					<!-- locate section begin -->
+					<div id="locate">
+						<div id="locate_header"></div>
+						<div id="locate_inner"></div>
+					</div>
+					<!-- locate section end -->
+					<!-- power Managment link section begin -->
+					<div id="powerMgmt">
+						<div id="powerMgmt_header"></div>
+						<div id="powerMgmt_inner"></div>
+					</div>
+					<!-- locate section end -->
+				</div>
+				<!-- left Sidebar Inner end -->
+			</div>
+			<!-- left Sidebar end -->
+
+			<!-- content begin -->
+			<div id="page_content">
+				<div id="content_header">
+					<div id="help"></div>
+					<div id="pageName"></div>
+					<div class="hr"><hr /></div>
+				</div>
+				<div id="content_body"></div>
+			</div>
+			<!-- content end -->
+		</div>
+		<!-- container end -->
+
+		<!-- <div id="ft" class="footer"> -->
+
+		<!-- for shared folders --> 
+		<div id='tDivLocal' class='x-hidden'></div>
+		<div id='tDivDomain' class='x-hidden'></div>
+		<!-- for shared folders end -->
+
+	</body>
+</html>

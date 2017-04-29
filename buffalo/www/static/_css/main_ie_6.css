@@ -1,0 +1,637 @@
+/*
+
+CSS for Internet Explorer 6
+
+*/
+
+
+* {
+margin:0;
+padding:0;
+text-decoration:none;
+}
+
+body {
+height:100%;
+font:11px/1.4em Verdana, Arial;
+color:#222;
+background:#FFF8E8 url(../_img/page_background.jpg) 0 123px no-repeat;
+width:100%;
+behavior:url("./_css/iehoverfix.htc");
+}
+
+
+/*	main container */
+#container {
+height:100%; 
+max-height:100%;
+width:expression(document.body.clientWidth < 1025 ? "1007px" : "100%");
+background:transparent url(../_img/left_sidebar_background_ie.png) no-repeat;
+}
+
+/* header */
+#header {
+height:123px;
+background:transparent url(../_img/header_background.jpg) repeat-x;
+
+}
+
+#header_inner {
+float:left;
+height:78px;
+width:expression(document.body.clientWidth < 1025 ? "1007px" : "100%" );
+background:transparent url(../_img/header_background_left.jpg) no-repeat;
+}
+
+#buff_logo {
+text-align:center;
+width:300px;
+margin:0 0 60px;
+position: absolute;
+top: 0;
+left:450px;
+height:64px;
+background:transparent url(../_img/logo_buffalo.png) no-repeat;
+}
+
+
+
+#dev_logo{
+float: left;
+top:10px;
+right:10px;
+color:#FFD384;
+width:300px;
+height:50px;
+padding: 10px 0px 0 0;
+margin: 10px 10px 0 7px;
+text-align: right;
+/*background:transparent url(../_img/tera_station.png) no-repeat;*/
+behavior:url("./_css/iepngfix.htc");
+}
+
+.dev_logo_ls{
+float: left;
+top:10px;
+right:10px;
+color:#FFD384;
+width:300px;
+height:50px;
+padding: 10px 0px 0 0;
+margin: 10px 10px 0 7px;
+text-align: right;
+background:transparent url(../_img/link_station.png) no-repeat;
+behavior:url("./_css/iepngfix.htc");
+}
+
+.dev_logo_ts{
+float: left;
+top:10px;
+right:10px;
+color:#FFD384;
+width:300px;
+height:50px;
+padding: 10px 0px 0 0;
+margin: 10px 10px 0 7px;
+text-align: right;
+background:transparent url(../_img/tera_station.png) no-repeat;
+behavior:url("./_css/iepngfix.htc");
+}
+.dev_logo_ts_iscsi{
+float: left;
+top:10px;
+right:10px;
+color:#FFD384;
+width:300px;
+height:50px;
+padding: 10px 0px 0 0;
+margin: 10px 10px 0 7px;
+text-align: right;
+background:transparent url(../_img/tera_station_iscsi_ie6.png) no-repeat;
+behavior:url("./_css/iepngfix.htc");
+}
+
+#acct_login {
+position:absolute;
+top:10px;
+right:20px;
+color:#FFD384;
+}
+
+#acct_login a {
+color:#fff;
+text-decoration:underline;
+}
+
+#acct_login a:hover {
+color:#ffff66;
+}
+
+
+
+/* top menus */
+#top_menus {
+margin:70px 0 0 200px;
+padding:6px 0 0 0px;
+left:0px; 
+right:0px; 
+position: absolute;
+width:expression(document.body.clientWidth < 824 ? "800px" : document.body.clientWidth - 200 + 'px');
+}
+
+.section_menu {
+margin:-5px 0 0 10px;
+float:left;
+}
+
+.section_menu li {
+float:left;
+display:inline;
+list-style:none;
+}
+
+.section_menu li:hover {
+position:relative;
+/*margin:0 0 0 1px;
+padding:0 0 0 1px;*/
+background:transparent url(../_img/top_menu_hover_left.png) 0 2px no-repeat;
+/*behavior:url("./_css/iehoverfix.htc");*/
+}
+
+.section_menu li a {
+float:left;
+color:#fff;
+font-weight:bold;
+padding:12px 25px 0 25px;
+height:40px;
+/*background:transparent url(../_img/top_menu_background.png) right 2px no-repeat;*/
+}
+
+.section_menu li a:hover {
+background:transparent url(../_img/top_menu_hover_right.png) right 2px no-repeat;
+}
+
+.section_menu li a:hover span {
+float:left;
+height:40px;
+background:transparent url(../_img/top_menu_hover_center.png) center 26px no-repeat; 
+
+}
+
+.section_menu_disabled {
+margin:-5px 0 0 10px;
+float:left;
+}
+
+.section_menu_disabled li {
+float:left;
+display:inline;
+list-style:none;
+}
+
+.section_menu_disabled li:hover {
+position:relative;
+}
+
+.section_menu_disabled li a {
+float:left;
+color:#fff;
+font-weight:bold;
+padding:12px 25px 0 25px;
+height:40px;
+}
+
+.section_menu_disabled li a:hover {
+}
+
+.section_menu_disabled li a:hover span {
+float:left;
+height:40px;
+}
+
+.section_menu_selected {
+float:left;
+height:40px;
+background:transparent url(../_img/top_menu_hover_left.png) 0 2px no-repeat;
+}
+
+.section_menu_selected a{
+float:left;
+background:transparent url(../_img/top_menu_hover_right.png) right 2px no-repeat;
+}
+
+.section_menu_selected a span{
+float:left;
+height:40px;
+background:transparent url(../_img/top_menu_hover_center.png) center 26px no-repeat;
+}
+
+.section_sub_menu {
+display:none; /* defaults: not to show submenu*/
+clear:both;
+height:33px;
+padding:0 0 0 15px;
+background:transparent url(../_img/top_sub_menu_background.png) no-repeat;
+width: 'auto';
+}
+
+.section_sub_menu li {
+display:inline;
+list-style:none;
+}
+
+.section_sub_menu li a {
+float:left;
+padding:7px 20px 0 10px;
+height:26px;
+color:#111;
+background:transparent url(../_img/spacer.png) no-repeat;
+}
+
+.section_sub_menu_ext li a {
+padding:7px 8px 0;
+}
+
+.section_sub_menu li a:hover {
+color:#ED0009;
+background:transparent url(../_img/top_sub_menu_hover.png) center bottom no-repeat;
+}
+
+.section_sub_menu_disabled {
+display:none; /* defaults: not to show submenu*/
+clear:both;
+height:33px;
+padding:0 0 0 15px;
+background:transparent url(../_img/top_sub_menu_background.png) no-repeat;
+width: 'auto';
+}
+
+.section_sub_menu_disabled li {
+display:inline;
+list-style:none;
+}
+
+.section_sub_menu_disabled li a {
+float:left;
+padding:7px 20px 0 20px;
+height:26px;
+color:#111;
+background:transparent url(../_img/spacer.png) no-repeat;
+}
+
+.section_sub_menu_disabled li a:hover {
+color:#ED0009;
+background:transparent url(../_img/top_sub_menu_hover.png) center bottom no-repeat;
+}
+
+.section_sub_menu_selected{
+float:left;
+font-weight:bold;
+background:transparent url(../_img/top_sub_menu_hover.png) center bottom no-repeat;
+}
+
+/* header ends here */
+
+/* left sidebar */
+#left-panel {
+background:none;
+}
+
+#left_sidebar {
+float:left; 
+width:200px;
+line-height:1.3em; 
+position: absolute;
+margin:-64px 0 0 0;
+}
+
+#container > #left_sidebar {
+position:absolute;
+bottom:0;
+
+}
+
+#left_sidebar_inner {
+width:200px;
+float:left;
+background:transparent url(../_img/left_sidebar_background_top.png) no-repeat;
+ height:477px;
+padding:0 0 15px 0;
+}
+
+#left_sidebar dl {
+padding:1px 0 12px 24px;
+}
+
+#left_sidebar dl dt {
+margin:10px 10px 0 0;
+}
+
+#left_sidebar dl dd {
+margin:0 0 0 8px;
+}
+
+#left_sidebar p {
+padding:0 0 15px 24px;
+}
+
+#left_sidebar p a {
+color:#00ADEE;
+}
+
+#system_warning {
+letter-spacing:2px;
+font-weight:bold;
+}
+
+#system_warning a{
+letter-spacing:1px;
+text-decoration:underline;
+color:#ffffff;
+} 
+
+#system_warning a:hover{
+color:#ffff66;
+} 
+
+#system_information p a:hover {
+color:#ffff66;
+}
+
+#locate_header {
+padding:5px 15px 0 0;
+}
+
+#locate_header h3 {
+margin:10px 0 0 0;
+height:18px;
+background:transparent url(../_img/title_system_information.png) no-repeat;
+}
+
+#locate_inner {
+width:190px;
+margin:0 0 0 11px;
+/*background:transparent url(../_img/menu_information_background.png) repeat-y;*/
+}
+
+#powerMgmt_header {
+padding:5px 15px 0 0;
+}
+
+#powerMgmt_header h3 {
+margin:10px 0 0 0;
+height:25px;
+background:transparent url(../_img/title_system_information.png) no-repeat;
+}
+
+#powerMgmt_inner {
+width:190px;
+margin:0 0 0 11px;
+padding-left:25px;
+}
+
+
+#iscsi_header {
+padding:5px 15px 0 0;
+}
+
+#iscsi_header h3 {
+margin:10px 0 0 0;
+height:25px;
+background:transparent url(../_img/title_system_information.png) no-repeat;
+}
+
+#iscsi_inner {
+width:190px;
+margin:0 0 0 0px;
+padding-left:0px;
+/*background:transparent url(../_img/menu_information_background.png.png) repeat-y;*/
+}
+
+
+#menu_information p a:hover {
+color:#ED0009;
+}
+
+#menu_information h3 {
+position: relative;
+height:26px;
+padding-top:7px; 
+background:transparent url(../_img/title_menu_information.png) no-repeat;
+}
+
+#menu_information_inner {
+width:190px;
+margin:0 0 0 11px;
+background:transparent url(../_img/menu_information_background.png) repeat-y;
+}
+
+#menu_information_inner, #menu_notify_inner, #firmware_update_inner {
+width:190px;
+margin:0 0 0 11px;
+background:transparent url(../_img/menu_information_background.png) repeat-y;
+}
+
+#system_information {
+padding:15px 15px 0 0;
+}
+
+#system_information h3 {
+position: relative;
+height:25px;
+background:transparent url(../_img/title_system_information.png) no-repeat;
+}
+
+
+#system_information_inner {
+width:190px;
+margin:0 0 0 0;}
+
+#system_information_header h3, #menu_information h3, #menu_notify h3, #iscsi_header h3, #locate_header h3, #powerMgmt_header h3 , #firmware_update_header h3{
+width:187px;
+color:#fff;
+font-style:italic;
+font-size:12px;
+letter-spacing:0px;
+padding:6px 0 0 23px;
+}
+
+#firmware_update_header {
+padding:5px 15px 0 0;
+}
+
+#firmware_update_header h3 {
+margin:10px 0 0 0;
+height:25px;
+background:transparent url(../_img/title_system_information.png) no-repeat;
+
+}
+#firmware_update_header h3 span a{
+color:#fff;
+text-decoration:underline;
+letter-spacing:0px;
+}
+#firmware_update_header h3 span a:hover {
+color:#ffff66;
+}
+
+
+#left_sidebar #menu_information_inner #menu_notify_inner, #firmware_update_inner dl {
+padding:1px 0 12px 18px;
+}
+
+#system_information dl dt {
+color:#FFD384;
+}
+
+#system_information dl dd {
+color:#fff;
+}
+
+#menu_information dl dt {
+color:#111;
+}
+
+#menu_information dl dd {
+color:#8B1015;
+}
+
+/* left sidebar ends here */
+
+/* page_content */
+#page_content {
+margin:0 0 0 220px;
+padding:0 0 0 20px;
+
+}
+
+#container > #page_content {
+position:absolute;
+top: 0px;
+left: 0px;
+bottom:0;
+background-color:transparent;
+width:expression(document.body.clientWidth - 250 < 900 ? "750px" : 'auto');
+}
+
+/* content_header*/
+#pageName_item{
+//font-size:16px;
+font-size:15px;
+color:#1A6DA2;
+}
+
+#pageName {
+max-width:824px;  
+margin:45px 20px 0 0;
+padding:0 0 0 0;
+}
+
+#pageName h3{
+//font-size:16px;
+font-size:15px;
+}
+
+#pageName a {
+color:#1A6DA2;
+height:50px;
+text-decoration:underline;
+}
+
+#pageName a:hover {
+color:#ED0009;
+}
+
+#content_header {
+position:absolute;
+width:expression(document.body.clientWidth - 250 < 800 ? "757px" : document.body.clientWidth - 250 + 'px');
+margin:10px 20px 0 0;
+height: 10px;
+}
+
+#content_header a {
+color:#1A6DA2;
+text-decoration:underline;
+}
+
+#content_header a:hover {
+color:#ED0009;
+}
+
+/* content_body */
+#content_body {
+height: 100%;
+position:absolute;
+width:expression(document.body.clientWidth - 250 < 800 ? "757px" : document.body.clientWidth - 250 + 'px'); 
+margin:100px 20px 0 0px; 
+padding:0 0 0 0px;
+}
+
+#content_body a {
+color:#1A6DA2;
+text-decoration:underline;
+}
+
+#content_body a:hover {
+color:#ED0009;
+}
+/* content_body ends here*/
+
+
+div.hr {
+clear:both;
+border-bottom:1px dashed #999;
+margin:10px 20px 0 0;
+}
+
+h2 {
+float:left;
+clear:left;
+margin:3px 100px 20px 0;
+line-height:1.2em;
+font-size:165%;
+}
+
+#help a {
+float:right;
+height:20px;
+padding:5px 20px 0 30px;
+background:transparent url(../_img/icon_help.png) no-repeat; 
+}
+
+#external {
+padding-left: 0px !important;
+padding-right: 15px !important;
+margin-right: 5px;
+background:transparent url(../_img/icon_external.png) no-repeat right !important;
+}
+/* page_content ends here */
+
+/* hide */
+
+.hidden, #buff_logo span, hr {
+position:absolute;
+left:-999em;
+width:1em;
+overflow:hidden;
+}
+/*
+#dfsOneLink{
+width: 350px;
+height: 190px;
+background-image: url(../_img/dfs1.png) no-repeat !important;
+}
+#dfsMultipleLinks{
+width: 350px;
+height: 190px;
+background-image: url(../_img/dfs2.png) no-repeat !important;
+}
+*/
+/* png fix for IE */
+#header_inner, #section_menu, #buff_logo, #container, #left_sidbar, #left_sidebar_inner, #system_information h3, #menu_information h3, #system_information_header h3, #iscsi_header h3, #locate_header h3, #powerMgmt_header h3 ,#help a, img, #dev_logo, .section_menu_selected, .dev_logo_ls, .dev_logo_ts, .dev_logo{
+behavior:url("./_css/iepngfix.htc");
+}
+
+#section_menu, .section_menu_selected, .section_sub_menu_selected{
+behavior:url("./_css/iehoverfix.htc");
+}

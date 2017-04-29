@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+	<!-- EXTJS LIBS -->
+	<link rel="stylesheet" type="text/css" href="ext/resources/css/ext-all.css" />
+	<script type="text/javascript" src="ext/adapter/ext/ext-base.js"></script>
+	<script type="text/javascript" src="ext/ext-all.js"></script>
+	<!-- EXTJS LIBS END -->
+
+	<script type="text/javascript">
+		if (Ext.isIE6) {
+			document.write('<link rel="stylesheet" type="text/css" href="_css/login_ie_6.css" />');
+		}
+		else {
+			document.write('<link rel="stylesheet" type="text/css" href="_css/login.css" />');
+		}
+	</script>
+
+	<!-- BUFFALO LIBS -->
+	<script type="text/javascript" src="ext-ux/MessageBox.js"></script>
+	<script type="text/javascript" src="menus/utils/common.js"></script>
+	<script type="text/javascript" src="cfg/vars.js"></script>
+	<script type="text/javascript" src="root/root.js"></script>
+	<script type="text/javascript" src="authentication/login_utils.js"></script>
+	<script type="text/javascript" src="authentication/login_form.js"></script>
+	<script type="text/javascript" src="menus/utils/help.js"></script>
+	<!-- BUFFALO LIBS END -->
+
+	<script type="text/javascript">
+		Ext.BLANK_IMAGE_URL = "ext/resources/images/default/s.gif";
+	</script>
+
+	<script type="text/javascript">
+		create_features_obj();
+		featureList.load({
+			callback: function() {
+				get_features();
+				select_logo();
+				request_login();
+
+				Ext.Ajax.request({
+					url: '/dynamic.pl',
+					params: {
+						bufaction: 'getHostNameSettings'
+					},
+					method: 'POST',
+					success: function (result){
+						// Get response from server
+						var rawData = result.responseText;
+						var response = Ext.decode(rawData);
+						var success = response.success;
+						var data = response.data;
+
+						if (success) {
+							var product_name_formatted = product_name.replace(/\(.*\)/,'');
+							title = series_name + ' - ' + product_name_formatted + '(' + data[0].hostName + ')';
+							document.title = title;
+						}
+					}
+				});
+			}
+		});
+	<!--
+	/*
+	function timedRefresh(timeoutPeriod) {
+		setTimeout("location.reload(true);", timeoutPeriod);
+	}
+	*/
+//	-->
+	</script>
+</head>
+
+<body style="border-top:4px solid green;">
+	<div align="center">
+		<div id="login_container">
+			<div id="login_header">
+				<div id="dev_logo"></div>
+				<div id="buff_logo"><span>Buffalo</span></div>
+			</div>
+
+			<div id="login_container_inner">
+				<div id="help"></div>
+				<div id="login_container_form">
+					<img id="login_loading" src="_img/loading_64.gif" width="64" height="64">
+				</div>
+			</div>
+
+			<div id='login_footer'>
+				Copyright 2002-2013, BUFFALO INC. All rights reserved.
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,445 @@
+/*
+  Created by: NE
+*/
+
+.label {
+	font:normal 12px tahoma, arial, helvetica, sans-serif;
+	color:black;
+	padding-top: 3px;
+	margin:0 0 0 2px;
+}
+.grid_cell_text_red {
+	/*font:normal 12px tahoma, arial, helvetica, sans-serif;*/
+	color:red;
+}
+.grid_cell_text_blue{
+	color:blue;
+}
+.grid_icon_duplex{
+  float: left; /* float that dropcap! */
+  width: 1.3em;
+  height: 1.3em;
+  padding-right: 3px;
+}
+.grid_icon_simplex{
+  float: left; /* float that dropcap! */
+  width: 1.0em;
+  height: 1.0em;
+  padding-right: 3px;
+}
+
+.x-label {
+	/*padding-left:160px;*/
+	margin:0 0 0 2px;
+}
+.label-fieldset {
+	font:normal 12px tahoma, arial, helvetica, sans-serif;
+	color:black;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin:0 0 0 1px;
+}
+
+.label-bold {
+	font:normal 12px tahoma, arial, helvetica, sans-serif;
+	color:black;
+	padding-top: 2px;
+	font-weight:bold;
+}
+
+.fieldsetLegend {
+	font:bold 11px tahoma, arial, helvetica, sans-serif;
+	color:#15428b;
+}
+
+.popup_win_label {
+	font:normal 12px tahoma, arial, helvetica, sans-serif;
+	color:black;
+	text-align: left;
+	padding:0 5px 5px 8px;
+}
+
+.title {
+	font:normal 14px tahoma, arial, helvetica, sans-serif;
+	color:black;
+	font-weight:bold;
+}
+
+.subtitle {
+	font-size:14px;
+	color:#1A6DA2;
+}
+
+.title-indent {
+	font:normal 14px tahoma, arial, helvetica, sans-serif;
+	color:black;
+	font-weight:bold;
+	padding:0 0 0 5px;
+}
+
+.op_details_title {
+	font:normal 14px tahoma, arial, helvetica, sans-serif;
+	color:black;
+	font-weight:bold;
+	padding:10px 0  0 0;
+}
+
+.op_details_item {
+	font:normal 12px tahoma, arial, helvetica, sans-serif;
+	color:black;
+	padding:15px 0 0 10px;
+}
+
+.op_button {
+	padding:20px 0 0 0;
+}
+
+.title_popup {
+	font:normal 14px tahoma, arial, helvetica, sans-serif;
+	color:black;
+	font-weight:bold;
+	text-align: center;
+}
+
+.title_popup  img{
+	height: 25px;
+}
+
+.msg {
+	font:normal 12px tahoma, arial, helvetica, sans-serif;
+	color:black;
+}
+
+.confirmation_instruction {
+	font:normal 12px tahoma, arial, helvetica, sans-serif;
+	color:black;
+	text-align: left;
+	padding:0 5px 0 8px;
+}
+
+.confirmation_number {
+/*	font:normal 16px Arial Black, arial, helvetica, sans-serif;
+	color:black;
+	font-weight:bold;
+*/
+	text-align: center;
+}
+
+.conf_numb_box {
+	padding:0 0 0 90px;
+	color:none;
+	text-align: center;
+	width:125px;
+}
+
+.conf_img {
+	width:30;
+	height:30;
+	border:0;
+}
+
+.required .x-form-item-label {
+	font:normal 12px tahoma, arial, helvetica, sans-serif;
+	font-weight:bold;
+	color:black;
+}
+
+.details-label .x-form-item-label {
+	font:normal 12px tahoma, arial, helvetica, sans-serif;
+	color:#E3B766;
+	font-weight:bold;
+}
+
+.details-label .x-form-field {
+	font:normal 12px tahoma, arial, helvetica, sans-serif;
+	background: none;
+	border: none;
+	color:#ffffff;
+	font-weight:bold;
+}
+
+.display-label-indent .x-form-item-label {
+	font:normal 12px tahoma, arial, helvetica, sans-serif;
+	color:#000000;
+	padding:0 0 0 10px;
+}
+
+.display-label-indent .x-form-field {
+	font:normal 12px tahoma, arial, helvetica, sans-serif;
+	background: none;
+	color:#000000;
+	border: none;
+}
+
+.display-label-bold .x-form-item-label {
+	font:normal 12px tahoma, arial, helvetica, sans-serif;
+	color:#000000;
+	font-weight:bold;
+}
+
+.display-label-bold .x-form-field {
+	background: none;
+	border: none;
+	color:#000000;
+	font-weight:bold;
+}
+
+.display-label-bold-left .x-form-item-label {
+	font:normal 12px tahoma, arial, helvetica, sans-serif;
+	color:#000000;
+	font-weight:bold;
+}
+
+.display-label-bold-left .x-form-field {
+	background: none;
+	border: none;
+	color:#000000;
+	font-weight:bold;
+	padding:0px;
+	font-style:italic;
+}
+
+.display-label .x-form-item-label{
+	font:normal 12px tahoma, arial, helvetica, sans-serif;
+	background: none;
+	border: none;
+	color:#000000;
+}
+
+.display-label .x-form-field{
+	font:normal 12px tahoma, arial, helvetica, sans-serif;
+	background: none;
+	border: none;
+	color:#000000;
+}
+
+.display-label-checkbox .x-form-cb-label {
+	background: none;
+	border: none;
+	color:gray;
+}
+
+.x-panel-body {
+	border:1px solid #990000;
+	border-top:0 none;
+	overflow:hidden;
+	background:transparent;
+	position: relative; /* added for item scroll positioning */
+}
+
+.x-panel-body .x-form-item-label {
+  font:normal 12px tahoma, arial, helvetica, sans-serif;
+  background: none;
+  border: none;
+}
+
+.fieldset-painted {
+	background-color:#666666;
+}
+/*--------------------------------------------*/
+.panel-custBorders .x-panel-body {
+	padding:10px;
+	border:1px solid #990000;
+	border-bottom:none;
+}
+
+.panel-custBorders .x-panel-footer {
+	border:1px solid #990000;
+	border-top:none;
+/*	border-left:1px solid #990000;
+	border-right:1px solid #990000;
+*/
+}
+
+.panel-custBorders .x-panel-btns-ct {
+	border:none;
+}
+
+.panel-custBorders .x-panel .x-grid-panel {
+	margin:2px 2px 2px 2px;
+}
+
+.panel-custBorders .x-form-item-label {
+	font:normal 12px tahoma, arial, helvetica, sans-serif;
+	background: none;
+	border: none;
+}
+
+/*--------------------------------------------*/
+/*-------------------------------------------*/
+.panel-custBorders-noButtons .x-panel-body {
+	padding:10px;
+	border:1px solid #990000;
+	/*border-bottom:none;*/
+}
+
+.panel-custBorders-noButtons .x-panel-footer {
+	border:1px solid #990000;
+	border-top:none;
+/*	border-left:1px solid #990000;
+	border-right:1px solid #990000;
+*/
+}
+
+.panel-custBorders-noButtons .x-panel-btns-ct {
+	border:none;
+}
+
+.panel-custBorders-noButtons .x-panel .x-grid-panel {
+	margin:2px 2px 2px 2px;
+}
+
+.panel-custBorders-noButtons .x-form-item-label {
+	font:normal 12px tahoma, arial, helvetica, sans-serif;
+	background: none;
+	border: none;
+}
+
+/*--------------------------------------------*/
+.column-custBorders .x-form-cb-label {
+	font:normal 12px tahoma, arial, helvetica, sans-serif;
+	background: none;
+	border: none;
+}
+
+.column-custBorders .x-panel-body {
+	padding:0;
+	border:0;
+}
+
+.column-custBorders .x-column-layout-ct {
+	border:0;
+}
+
+.column-custBorders .x-panel-btns-ct {
+	border:none;
+}
+
+.column-custBorders .x-panel-footer {
+	border:none;
+}
+.panel-custBorders-indent  .x-panel-body {
+	padding:0 0 20px 20px;
+	border:none;
+	border-bottom:0;
+}
+
+.panel-custBorders-indent-item  .x-form-check-wrap {
+	margin:0 0 0 10px;
+}
+
+.panel-custBorders-indent  .x-panel-footer {
+	border:none;
+	border-top:0;
+}
+
+
+.panel-custBorders-indent-no-borders .x-panel-body {
+	padding:0 0 10px 0px;
+	border:none;
+	border-bottom:0;
+}
+
+.panel-custBorders-indent-item-no-borders .x-form-check-wrap {
+	margin:0 0 0 8px;
+}
+
+.panel-custBorders-indent-no-borders  .x-panel-footer {
+	border:none;
+	border-top:0;
+}
+
+.column-custBorders-indent  .x-panel-body {
+	padding:0;
+	border:0;
+}
+.column-custBorders-indent .x-column-inner {
+	padding:0;
+	border:0;
+}
+
+.column-custBorders-indent .x-column-layout-ct {
+	padding: 0 0 0 20px;
+	margin: 5px 0 5px -20px;
+	border:0;
+}
+
+.column-bottomBorder .x-column-inner {
+	border-bottom:1px solid #990000;
+}
+
+
+.column-custBorders-half .x-panel-body {
+	margin:-15px;
+	border:0;
+}
+
+.ux-radio .x-grid3-row-radio {
+	width:100%;
+	height:5px;
+	padding: 0 0 0 0;
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+	background-color:transparent;
+}
+
+.r_locate_btn {
+	padding:8px 0 10px 50px;
+}
+
+.r_locate_btn_img {
+	background-image:url(../_img/other/magnifier.png) !important;
+}
+.r_iscsi_btn {
+	padding:8px 0 10px 50px;
+}
+
+.r_iscsi_btn_img_started {
+	/*background-image:url(../_img/other/lightning.png) !important;*/
+	background-image:url(../ext/resources/images/default/dd/drop-yes.gif) !important;
+}
+.r_iscsi_btn_img_stopped {
+	/*background-image:url(../_img/other/stop.png) !important;*/
+	background-image:url(../ext/resources/images/default/dd/drop-no.gif) !important;
+}
+
+.r_iscsi_btn .x-btn-pressed *{
+	cursor: default !important;
+}
+.r_iscsi_btn .x-btn-pressed .x-btn-center{
+	background:transparent url(../_img/x-btn-sprite.gif) repeat-x scroll 0 -126px;
+	background-color:#666666;
+}
+
+.r_iscsi_btn .x-btn-pressed .x-btn-left{
+	background:transparent url(../_img/x-btn-sprite.gif) no-repeat scroll 0 -63px;
+}
+.r_iscsi_btn .x-btn-pressed .x-btn-right{
+	background:transparent url(../_img/x-btn-sprite.gif) no-repeat scroll 0 -84px;
+}
+
+.x-grid-row-with-image .x-grid3-row {
+	height:18px;
+	text-align: left;
+}
+
+hr.pocketu {
+	width:100%;
+	left:0;
+	height: 1px;
+	border: none;
+	border-top: 1px #000000 solid;
+	margin:5px 0px;
+	position:static;
+}
+
+.pocketu {
+	font-size:12px;
+	/*background:seashell;*/
+}
+
+.warnings {
+	font-size:12px;
+	color:#ff0000
+}
+

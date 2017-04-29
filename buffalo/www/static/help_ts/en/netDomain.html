@@ -1,0 +1,75 @@
+﻿
+<div id="divHelpItemTitle" style="font-weight: bold;">[] Workgroup/Domain</div>
+
+<div id="divHelpItem" class="doc" >
+<br />
+<div id="divDocumentText" class="doc_text">
+Select Network Type that is right for your situation:<br />
+</br>
+Workgroup - Default and is used when not participating in a Domain environment.
+</br>
+NT Domain - Used when participating in a NT Domain environment
+</br>
+Active Directory - Used when participation in a Active Directory environment.
+</div>
+</div>
+
+
+<br />
+<div id="divHelpItemTitle" style="font-weight: bold;">[] Authentication Setup</div>
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">Authentication Type</div>
+<div id="divDocumentText" class="doc_text">
+Select authorization method for access to the TeraStation.<br />
+<br />
+[Delegate Authority to TeraStation]<br />
+With this setting, only users who are registered on the TeraStation setup screen can access the TeraStation.  The user's username and password registered to the TeraStation must be same as those used when logging on to Windows.  This is the default authentication method, and is recommended for most users.<br />
+<br />
+[Delegate Authority to External SMB Server]<br />
+With this setting, user authentication for the TeraStation will be controlled by an external SMB authentication server.  This is normally only appropriate in large corporate networks.  Consult your network administrator for any information necessary to use your company's authentication server with the TeraStation.<br />
+<br />
+[Use Windows Domain Controller as an Authentication Server]<br />
+With this setting, user authentication for the TeraStation will be managed by your Windows domain controller(s), without TeraStation's participating in the domain.  To use this setting, your TeraStation's domain name will need to match the Windows domain controller's domain name.<br />
+<br />
+[Automatic User Registration]<br />
+Select this to add all users authenticated by an external authentication server to the TeraStation's internal user list  automatically.<br />
+<br />
+[Authentication Shared Folder]<br />
+If enabled, this option will create an open share.  Until this share is removed, any domain users that access this share will be registered on the TeraStation.  This makes it very easy for a network administrator to let a large number of people register themselves on the TeraStation.  Once all of the desired users are registered, access restrictions may be set on other shares with those users, and the authentication shared folder should be removed.
+</div>
+</div><br />
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">[Authentication Server Name or IP address]</div>
+<div id="divDocumentText" class="doc_text">
+If using an external authentication server, specify its name or IP address here.<br />
+Note:  If communication with the TeraStation will be made via AppleTalk or FTP, specify the external authentication server's IP address. Use of the Server Name with AppleTalk or FTP may result in failure to authenticate.  Also, to specify an external authentication server that is located on another subnet or network, your must use its IP address, not the name.
+</div>
+</div><br />
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">[Authentication Shared Folder Name]</div>
+<div id="divDocumentText" class="doc_text">
+When [Delegate authority to External SMB Server], [Automatic 
+User Registration] or [Authentication Shared Folder] is selected, enter a folder name of a shared folder for authentication test. Any users who then open that shared folder will be registered as a TeraStation user automatically.<br />
+<br />
+Notes:
+-Two or more shared folder for authentication test can not be generated.<br />
+-Users registered automatically belong to [hdusers] group.<br />
+-Existing shared folder name can not be used as the shared folder name for authentication test.<br />
+-Up to 12 alphanumeric characters can be used.<br />
+-Alphanumeric characters, 2 byte characters, `-`(hyphen), and `_`(under score) can be used.<br />
+-Numbers and signs can not be used as the first character in the name.
+</div>
+</div>
+
+<br />
+<div id="divHelpItemTitle" style="font-weight: bold;">Local user authorization settings</div>
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">Local user authorization</div>
+<div id="divDocumentText" class="doc_text">
+If you're using external authentication, you can choose to [Allow] or [Deny] local user access.<br />
+</div>
+</div>

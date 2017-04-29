@@ -1,0 +1,50 @@
+.addUser {
+    background-image:url(../ext/resources/images/default/fam/user_add.png) !important;
+}
+.removeUser {
+    background-image:url(../ext/resources/images/default/fam/user_delete.png) !important;
+}
+.removeFilter{
+    background-image:url(../ext/resources/images/default/dd/drop-no.gif) !important;
+}
+.add{
+    background-image:url(../_img/add.gif) !important;
+}
+.delete {
+    background-image:url(../_img/delete.gif) !important;
+}
+.refresh {
+    background-image:url(../ext/resources/images/default/grid/refresh.gif) !important;
+}
+.edit {
+    background-image:url(../_img/pencil.gif) !important;
+}
+.view {
+    background-image:url(../ext/resources/images/default/fam/cog_edit.png) !important;
+}
+.activate {
+    background-image:url(../_img/activate.png) !important;
+}
+.deactivate {
+    background-image:url(../_img/deactivate.png) !important;
+}
+.deactivate .x-btn-icon .x-btn-center .x-btn-text{
+    background-image:url(../ext/resources/images/default/grid/col-move-top.gif) !important;
+	background-position:center center;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	height:16px;
+	padding:0;
+	white-space:nowrap;
+	width:10px;
+}
+
+.plug {
+    background-image:url(../_img/other/plug.png) !important;
+}
+.enable {
+    background-image:url(../_img/enable.png) !important;
+}
+.disable {
+    background-image:url(../_img/disable.png) !important;
+}

@@ -1,0 +1,121 @@
+﻿<div id="divHelpItemTitle" style="font-weight: bold;">[] Disk Backup</div>
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">Disk Backup</div>
+<div id="divDocumentText" class="doc_text">
+Up to 8 scheduled backup jobs can  be created.  Click on [Create New Job] to configure a new backup job.  You may schedule your LinkStation to create a backup to an external USB hard drive or to another LinkStation.<br />
+<br />
+To use a USB hard drive as your backup destination, its file system must be either FAT32, XFS, or EXT3.<br />
+FAT32 has a maximum file size of 2GB.  XFS or EXT3 is recommended for backup hard drives.<br />
+Never unplug the power or USB cord while performing a backup.<br /> <br />
+You cannot perform the following operations during the backup process:<br />
+  - LinkStation Initialization <br />
+  - Disk format <br />
+  - Disk check<br />
+  - Create backup job<br />
+  - Addition/editing/deletion of shared folder/group/user<br />
+</div>
+</div>
+
+
+<br />
+<div id="divHelpItemTitle" style="font-weight: bold;">[] Backup Destination Shared Folder Password</div>
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentText" class="doc_text">
+To create a backup job to a share that is password protected as a backup destination, enter the password to see protected shares with that password.
+</div>
+</div>
+
+
+<br />
+<div id="divHelpItemTitle" style="font-weight: bold;">[] Edit Backup Job</div>
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">Backup Job Schedule</div>
+<div id="divDocumentText" class="doc_text">
+Select from "Not Scheduled", "Immediately", "Every day", "Every week".<br />
+The backup job will not run if you choose "Not Scheduled".
+</div>
+</div>
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">Backup Date</div>
+<div id="divDocumentText" class="doc_text">
+Select the day you want the backup to occur.
+</div>
+</div>
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">Backup Time</div>
+<div id="divDocumentText" class="doc_text">
+Select the time you want the backup to occur.
+</div>
+</div>
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">Backup Function Mode</div>
+<div id="divDocumentText" class="doc_text">
+Backup mode selection:<br />
+*Normal Backup makes a complete backup.<br />
+*Overwrite backup options modify an existing backup.<br />
+*Overwrite backup (Complete/Differential) updates the previous backup with new files and changed files.<br />
+*Overwrite backup (Append) updates the previous backup with new files only.<br />
+*Overwrite backup (Differential) updates the backup with modified files only.<br />
+<br />
+Caution: Overwrite backup (Differential) option will write over modified files from previous backup.<br />
+Caution: Do not access any backup file(s) during the backup. This may cause an error.<br />
+</div>
+</div>
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">Backup Option</div>
+<div id="divDocumentText" class="doc_text">
+[Create a folder inside of the backup target folder.]<br />
+This option creates a new folder for the backup inside the original backup target folder.<br />
+[Use Encryption]<br />
+If selected, this option will use an encrypted connection between the source LinkStation and the backup LinkStation for secure data transfer.  Transfer speed will be reduced when using encryption.  Encryption is not available if the backup destination is a USB hard drive.  <br />
+[Compressed Transfer]<br />
+You may enable compression for data transfer.  Compression may increase transfer speeds on networks with limited bandwidth.  Do not enable compression if the backup destination is a USB 2.0 hard drive.<br />
+[Exclude trash boxes from backup target]<br />
+If this option is checked, the Trashbox folder will not be backed up.<br />
+[Create backup log file]<br />
+This creates a log file of the backup job.<br />
+[Ignore backup failure and continue backup job on schedule]<br />
+If enabled, future scheduled backups will continue even if there are errors with this backup.
+</div>
+</div>
+
+
+<br />
+<div id="divHelpItemTitle" style="font-weight: bold;">[] Backup Source and Destination Folders</div>
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentText" class="doc_text">
+Choose a source and destination folder for the backup job.
+</div>
+</div>
+
+
+<br />
+<div id="divHelpItemTitle" style="font-weight: bold;">[] LinkStation List</div>
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">LinkStation List</div>
+<div id="divDocumentText" class="doc_text">
+Display list of LinkStations on the network.<br />
+Click [Renew] to refresh the list.
+</div>
+</div>
+
+
+<br />
+<div id="divHelpItemTitle" style="font-weight: bold;">[] Add Remote Off-Subnet LinkStation</div>
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">Remote LinkStation IP Address</div>
+<div id="divDocumentText" class="doc_text">
+To use a LinkStation from your subnet that is not displayed on the list, or to add a LinkStation from a different subnet, enter the LinkStation's IP address and click [Add to List].<br />
+To delete the registered LinkStation from the list, select the LinkStation and click [Remove from List].
+</div>
+</div>

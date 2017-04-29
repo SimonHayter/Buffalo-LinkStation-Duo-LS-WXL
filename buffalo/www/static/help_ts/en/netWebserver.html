@@ -1,0 +1,140 @@
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=us-ascii">
+<div id="divHelpItemTitle" style="font-weight: bold;">[] Web Server Settings</div>
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentText" class="doc_text">
+Click on [Modify Settings] to change settings.
+</div>
+</div>
+
+<br />
+<div id="divHelpItemTitle" style="font-weight: bold;">[] Web Server</div>
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentText" class="doc_text">
+Enable to use the Web server.
+</div>
+</div>
+
+<br />
+<div id="divHelpItemTitle" style="font-weight: bold;">[] Port Number</div>
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentText" class="doc_text">
+Choose the port for web server traffic.  The default port is 81.
+</div>
+</div>
+
+<br />
+<div id="divHelpItemTitle" style="font-weight: bold;">[] Web Server Publishing Folder</div>
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentText" class="doc_text">
+Enable to use the Web server.  Three directories will be created in the Web Server Publishing Folder, htdocs, cgi-bin, and log:
+</div>
+</div>
+
+<br />
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">(web server publishing folder, ie. web)/htdocs/ </div>
+<div id="divDocumentText" class="doc_text">
+This folder is used to store the contents of your webserver and the HTML files or PHP scripts you would like to include.  Example: When you set up a share folder called &#8220;web&#8221;, the path via SMB will be   \\TeraStation_name\web\htdocs.
+</div>
+</div>
+
+<br />
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">(web server publishing folder, ie. web)/cgi-bin/ </div>
+<div id="divDocumentText" class="doc_text">
+Use this folder to store your CGI (Common Gateway Interface) scripts.  Perl is the only supported language.  Script extensions should be either .pl or .cgi.
+</div>
+</div>
+
+<br />
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">(web server publishing folder, ie. web)/log/ </div>
+<div id="divDocumentText" class="doc_text">
+Logs from the web server are stored in this folder.
+</div>
+</div>
+
+<br />
+<div id="divHelpItemTitle" style="font-weight: bold;">[] Testing Web Server Functionality</div>
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentText" class="doc_text">
+Navigate to http://TeraStation_IP_address:port_number.	For example, http://192.168.11.150:81.	If the web server is configured correctly, phpinfo will be visible.	Phpinfo shows the PHP interpreter settings.
+</div>
+</div>
+
+<br />
+<div id="divHelpItemTitle" style="font-weight: bold;">[] CGI file relationships</div>
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentText" class="doc_text">
+
+<br />
+
+</style>
+
+
+
+
+
+<div class=Section1>
+
+
+<table class=MsoNormalTable border=1 cellspacing=3 cellpadding=0
+ style=''>
+ <tr style=''>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Language </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Extension </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Configuration path</p>
+  </td>
+ </tr>
+ <tr style=''>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Perl</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>.<span class=SpellE>cgi</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Only &quot;<span class=SpellE>cgi</span>-bin&quot;
+  folder<span style=''>  </span>in web server public folder</p>
+  </td>
+ </tr>
+ <tr style=''>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Perl</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>.pl</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Only &quot;<span class=SpellE>cgi</span>-bin&quot;
+  folder<span style=''>  </span>in web server public ( share )
+  folder</p>
+  </td>
+ </tr>
+ <tr style=''>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>PHP</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>.<span class=SpellE>php</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>In web server public folder</p>
+  </td>
+ </tr>
+</table>
+
+<br />
+<div id="divHelpItemTitle" style="font-weight: bold;">[] php.ini</div>
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentText" class="doc_text">
+You can change PHP language interpreter settings (advanced users only).  php.ini may be imported or edited from a connected PC.
+<br /> <br />
+Note:  PHP scripts may not work as expected after you edit php.ini.  You may go back to the default php.ini by clicking on [Restore Default Settings].
+</div>
+</div>

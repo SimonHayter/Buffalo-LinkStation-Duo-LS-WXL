@@ -1,0 +1,45 @@
+Apr 30 04:13:27 LS-WXL602 kernelmon: cmd=PSW_off
+Apr 30 04:13:27 LS-WXL602 linkstation: SHUTDOWN START normal
+Apr 30 04:13:32 LS-WXL602 twonky: Media Server script is begun. type=stop 
+Apr 30 04:13:32 LS-WXL602 twonky: stop Media Server
+Apr 30 04:13:36 LS-WXL602 bittorrent: WaitBtDie is finished. 
+Apr 30 04:13:43 LS-WXL602 dhcpcd[2191]: terminating on signal 15 
+Apr 30 04:13:43 LS-WXL602 dhcpcd[2191]: ** DontDownIface=1 
+Apr 30 04:13:43 LS-WXL602 dhcpcd.exe: interface eth1 has been brought down
+Apr 30 04:13:44 LS-WXL602 linkstation: Stopped rarpd tftpd rarpcfgd fwupdated
+Apr 30 04:13:44 LS-WXL602 ups.sh: Successfully stopped!
+Apr 30 04:19:12 LS-WXL602 linkstation: Started inetd
+Apr 30 04:19:12 LS-WXL602 linkstation: Started errormon
+Apr 30 04:19:12 LS-WXL602 linkstation: Started kernelmon
+Apr 30 04:19:15 LS-WXL602 kernelmon: cmd=lanact 0 full eth1
+Apr 30 04:19:18 LS-WXL602 kernelmon: cmd=lanact 1000 full eth1
+Apr 30 04:19:23 LS-WXL602 start_data_array.sh: *** diskinfo guess ***
+Apr 30 04:19:24 LS-WXL602 start_data_array.sh:  >check normal state
+Apr 30 04:19:24 LS-WXL602 start_data_array.sh:   * The status is normal? *
+Apr 30 04:19:24 LS-WXL602 start_data_array.sh:    diskinfo guess is not exist normal state.
+Apr 30 04:19:24 LS-WXL602 start_data_array.sh:    skip normal status checking.
+Apr 30 04:19:24 LS-WXL602 start_data_array.sh: *** compaire ***
+Apr 30 04:19:24 LS-WXL602 start_data_array.sh:  array1=raid1 ... [OK]
+Apr 30 04:19:24 LS-WXL602 start_data_array.sh:  array1_dev=md2 ... [skip]
+Apr 30 04:19:24 LS-WXL602 start_data_array.sh:  disk1=array1 ... [OK]
+Apr 30 04:19:24 LS-WXL602 start_data_array.sh:  disk1_dev= ... [skip]
+Apr 30 04:19:24 LS-WXL602 start_data_array.sh:  disk2=array1 ... [OK]
+Apr 30 04:19:24 LS-WXL602 start_data_array.sh:  disk2_dev= ... [skip]
+Apr 30 04:19:24 LS-WXL602 start_data_array.sh: diskinfo ... [OK]
+Apr 30 04:19:33 LS-WXL602 linkstation: Started logchkd
+Apr 30 04:19:39 LS-WXL602 linkstation: cron.sh : logrotate.status is fine.
+Apr 30 04:19:42 LS-WXL602 linkstation: Started rarpd tftpd rarpcfgd fwupdated
+Apr 30 04:19:44 LS-WXL602 demorons(657) - INFO - found.
+Apr 30 04:19:45 LS-WXL602 S40B_update_notifications.sh: deleting old settings...
+Apr 30 04:19:45 LS-WXL602 twonky: Media Server script is begun. type=start 
+Apr 30 04:19:46 LS-WXL602 S40B_update_notifications.sh: deleting old settings...
+Apr 30 04:19:47 LS-WXL602 -p: Not started iTunes Server. Not exist [/mnt/disk1/share]
+Apr 30 04:19:47 LS-WXL602 S40B_update_notifications.sh: deleting old settings...
+Apr 30 04:19:47 LS-WXL602 S40B_update_notifications.sh: checking and registering to cron...
+Apr 30 04:19:49 LS-WXL602 S40B_update_notifications.sh: starting f/w cheking process ...
+Apr 30 04:19:52 LS-WXL602 twonky: Media Server setting is off
+Apr 30 04:19:55 LS-WXL602 kernelmon: cmd=PSW_auto
+Apr 30 04:19:57 LS-WXL602 S40B_update_notifications.sh: step1 result=0
+Apr 30 04:19:57 LS-WXL602 S40B_update_notifications.sh: version_is_latest
+Apr 30 04:19:57 LS-WXL602 S40B_update_notifications.sh: deleting from lcd...
+Apr 30 04:19:58 LS-WXL602 root: linkstation

@@ -1,0 +1,88 @@
+<div id="divHelpItemTitle" style="font-weight: bold;">[] Shared Folders</div>
+<div id="divDocumentText" class="doc_text">
+Click [Create Folder] to add a new shared folder to the list.<br />
+To edit the properties of an existing folder, click on that shared folder's name.<br />
+To delete a shared folder, select (check) the folder and click [Delete].
+</div>
+</div>
+
+<br />
+<div id="divHelpItemTitle" style="font-weight: bold;">[] Add New Shared Folder</div>
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">Shared Folder Names may have up to 12 alphanumeric characters or up to 6 two bytes characters.  Letters, numbers, two-byte characters, `-`(hyphens), and `_` (underscores) may be used.   Numbers and signs may not be used as the first character in a name.<br />
+</div>
+</div>
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">Shared Folder Descriptions may have up to 50 alphanumeric characters or up to 25 two-byte characters.  Letters, numbers, two byte characters, `-`(hyphens), and `_` (under scores) may be used. <br />
+</div>
+</div>
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">The Volume is the array on which the shared folder will be located. 
+</div>
+</div>
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">Under Shared Folder Support, several protocols may be chosen.  Check any that you want the shared folder to support.  
+<ul>
+<li>"Windows": share will be SMB compatible, for use with Windows or Mac OS X computers.</li>
+<li>"Apple": share will be AFP (AppleTalk) compatible, for use with older Mac OS 9 and earlier Apple computers.</li>
+<li>FTP: allows access to the share via FTP.  To use, also enable FTP Server in Network Sharing Services.</li>
+<li>Backup: allows the share to be used as backup destination by other TeraStations.</li>
+</ul>
+</div>
+</div>
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">Shared Folder Attributes</div>
+<div id="divDocumentText" class="doc_text">
+The share may be writable, or read-only.
+</div>
+</div><br />
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">Recycle Bin</div>
+<div id="divDocumentText" class="doc_text">
+If enabled, deleted files from the shared folder will be moved to a [Recycle Bin] folder rather than permanently deleted. <br />
+<br />
+Notes on Recycle Bin:
+-Directory information is kept when a file is moved to [Recycle Bin].<br />
+-A [Recycle Bin] folder can be set for each shared folder on the TeraStation or attached USB hard drive.<br />
+-To use Recycle Bin on an attached USB hard disk, the disk format must be EXT3 or XFS.  Recycle Bin doesn't support FAT32 or NTFS.<br />
+-Recycle Bin cannot be used with AFP (AppleTalk) or FTP.<br />
+</div>
+</div><br />
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">Remote Backup Password</div>
+<div id="divDocumentText" class="doc_text">
+A password can be set to prevent this TeraStation mistakenly being used as a backup destination by another TeraStation on the network.
+</div>
+</div>
+
+
+<br />
+<div id="divHelpItemTitle" style="font-weight: bold;">[] Access Restrictions</div>
+
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentTitle">Access Restrictions</div>
+<div id="divDocumentText" class="doc_text">
+By default, access restrictions are disabled.  This means that anyone on the local subnet can use the TeraStation.  To restrict TeraStation access to registered uses, check [Access Restrictions].<br />
+<br />
+Click [Add User/Group].  Put a check next to each user and groups that you want to have the right to access the restricted share.  Click [Add].  The user or group now has read-only access to the share.  To add write-access, double-click on [Read Only] and choose [Read and Write].  Click [Save] when done.<br />
+<br />
+
+Notes:
+-If a user has both 'Read and Write' and 'Read Only' access, then they will have 'Read Only' access.  The more restrictive access will supercede.<br />
+-A USB hard disk which is formatted with FAT16/32 is writable only by the backup utility.  If used as a shared folder, FAT16 and FAT32 drives will always be Read Only.<br />
+-Attributes and settings of a shared folder outweigh and override attributes and privileges of users and groups.<br />
+-If connecting via AppleTalk or FTP, then only individually assigned user access rights apply.  Group privileges alone will not be sufficient to access the share.
+</div>
+</div>
+
+
+
+
+
+

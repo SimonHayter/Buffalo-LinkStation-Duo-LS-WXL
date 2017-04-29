@@ -1,0 +1,90 @@
+<html>
+<head>
+
+	  <script type="text/javascript" src="ext/adapter/ext/ext-base.js"></script>
+  <script type="text/javascript" src="ext/ext-all.js"></script>
+	<script type="text/javascript">
+
+	Ext.onReady(function(){
+
+	function fileUpdateForm(){
+
+	    var csv_file = new Ext.form.TextField({
+			  name: 'upload_file',
+			  id: 'upload_file',
+	        hideLabel: true,
+	        width: 200,
+			  height: 23,
+			  inputType:'file',
+			  allowBlank: false
+	    });
+		
+		var csv_import = new Ext.Button({
+	      id: 'csv_import',
+	      text: 'Import',
+	    //  text: 'Upload',
+	      handler: function(){
+				fileUpdateFormHandler(userForm);
+	      }
+	   });
+		     var userForm = new Ext.FormPanel({
+	        allowDomMove : false,
+	        id: 'myForm',
+	        labelAlign: 'left',
+	        header: false,
+	        bodyStyle:'padding:5px',
+	        width: 300,
+	        items: [csv_file, csv_import],
+			  fileUpload:true,
+			//  method:'POST',
+			//  enctype:"multipart/form-data"
+	    });
+		  userForm.render(document.body);
+
+	}
+	function fileUpdateFormHandler(userForm){
+	
+		if(Ext.getCmp('upload_file').getValue() == ''){
+			alert('enter a file name');
+			return;
+		}
+		userForm.form.submit({
+			url: '/import.pl', 
+			waitMsg: S('uploading'),
+			failure:function(form,action){
+			if(action.response){
+				 var decodedResponse= Ext.decode(action.response.responseText);
+				 alert(decodedResponse.errors[0]);
+			}
+			 
+			},
+			success:function(form,action) {
+			 var decodedResponse= Ext.decode(action.response.responseText);
+			 alert('File was uploaded successfully!!');
+			}
+		});
+	}
+		fileUpdateForm();
+	});
+	
+	
+	</script>
+  
+</head>
+<body>    
+<!--  <form id="myForm"  url='/import.pl' enctype="multipart/form-data"> 
+  <input type="file" /> 
+  <INPUT  method="post"  type="submit" value="Click Me">
+  </form>
+
+<form  action = "/import.pl" enctype="multipart/form-data" method="post">
+Please specify a file, or a set of files:<br>
+<input type="file"  name="upload_file" size="40" maxlength="80">
+</p>
+<div>
+<input type="submit" name="Upload"  value="Send">
+</div>
+</form>
+    -->
+</body>    
+</html>

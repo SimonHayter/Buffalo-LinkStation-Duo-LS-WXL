@@ -1,0 +1,39 @@
+// bufactions
+var BUFACT_GET_LVM_LIST = 'getLvmList';
+var BUFACT_GET_VOLUME_LIST = 'getIscsiVolumeList';
+var BUFACT_GET_VOLUME = 'getIscsiVolumeSettings';
+var BUFACT_SET_VOLUME = 'setIscsiVolumeSettings';
+var BUFACT_ADD_VOLUME = 'addIscsiVolume';
+var BUFACT_SET_VOLUME_STATUS = 'setIscsiVolumeActive';
+
+// IDs
+var ID_FORM_VOLUME = 'volumeListForm';
+var ID_VOLUME_GRID = 'volumeListGrid';
+var ID_VOLUME_DELETE_WIN = 'volume_delete_win';
+
+// DIVs
+var VOLUMES_RENDER_TO = 'content_body';
+var VOLUMES_HEADER_RENDER_TO = 'content_header';
+var VOLUMES_DELETE_WIN = 'delete_confirm_div';
+
+// Values
+var VOLUME_MAX_CONN_VAL = 16;
+var VOLUME_MIN_CONN_VAL = 1;
+var VOLUME_MAX_RECV_DATA_VAL = 16777215;
+var VOLUME_MIN_RECV_DATA_VAL = 512;
+var VOLUME_MAX_XMIT_DATA_VAL = 16777215;
+var VOLUME_MIN_XMIT_DATA_VAL = 512;
+var VOLUME_MAX_BURST_VAL = 16777215;
+var VOLUME_MIN_BURST_VAL = 512;
+var VOLUME_MAX_FIRST_BURST_VAL = 16777215;
+var VOLUME_MIN_FIRST_BURST_VAL = 512;
+var VOLUME_MAX_OUTSTANDING_VAL = 65535;
+var VOLUME_MIN_OUTSTANDING_VAL = 1;
+var VOLUME_MAX_WTHREADS_VAL = 128;
+var VOLUME_MIN_WTHREADS_VAL = 1;
+var VOLUME_MAX_QUEUED_VAL = 256;
+var VOLUME_MIN_QUEUED_VAL = 1;
+
+var VOLUME_MAX_SIZE_VAL;
+var VOLUME_MIN_SIZE_VAL = 1;
+var VOLUME_MAX_AMOUNT = 32;

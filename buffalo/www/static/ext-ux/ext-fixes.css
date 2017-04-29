@@ -1,0 +1,8 @@
+.ext-strict .ext-safari .x-small-editor .x-form-text {
+    height: 18px !important;
+}
+.ext-safari .x-form-field-wrap .x-form-trigger{
+    position:static;
+    top:auto;
+    vertical-align:top;
+}

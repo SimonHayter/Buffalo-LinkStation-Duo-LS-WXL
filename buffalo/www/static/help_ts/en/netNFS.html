@@ -1,0 +1,18 @@
+﻿<div id="divHelpItemTitle" style="font-weight: bold;">[] NFS</div>
+<div id="divHelpItem" class="doc" >
+<div id="divDocumentText" class="doc_text"><br />
+
+With NFS enabled, you can access a shared folder on the TeraStation from an NFS client. NFS is disabled by default. To enable it, navigate to Network/NFS and open Network Service. Click Modify Settings. Enable NFS.  
+
+Optional:  To restrict access to a specific subnet, enter the IP address and subnet mask for the subnet.  For example, to restrict access to clients with IP addresses in the 192.168.11.xxx range, enter 192.168.11.0 for the network address and 255.255.255.0 for the subnet mask.  To restrict access to clients with IP addresses in the 192.168.xxx.xxx range, enter 192.168.11.0 for the network address and 255.255.0.0 for the subnet mask.  To allow access from any machine, use the default:  0.0.0.0 for both the network address and subnet mask.
+
+Click [Save] when done.<br /><br />
+
+In NFS Folders Setup, click on the name of your share.  Click Enable and then Save.<br /><br />
+
+In NFS Client Setup, click Add Client. Enter the IP address and subnet mask of your client and click Save. Repeat for each client that you want to allow to connect with NFS.  Note:  This step may not be required for recent versions of Linux or Unix.<br /><br />
+
+To access the TeraStation through NFS using Windows Services for Unix 3.5, the command will be mount 192.168.1.150:/mnt/array1/share z:, where “192.168.1.150” is the TeraStation’s IP address, “/mnt/array1/share” is the NFS publishing path, and “z” is an unused network drive letter.  For an OS X Mac, the command would be sudo mount_nfs -P 192.168.1.150:/mnt/array1/share /Volumes.  Other NFS compatible operating systems use different commands to access an NFS share.  Consult your OS’s documentation for more information about connecting to an NFS share.
+</div>
+</div>
+

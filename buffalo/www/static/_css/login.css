@@ -1,0 +1,203 @@
+/*
+
+Main CSS for all browsers except IE6
+
+*/
+
+
+* {
+margin:0;
+padding:0;
+text-decoration:none;
+}
+
+body {
+height:100%;
+font:11px/1.4em Verdana, Arial;
+color:#222;
+background:#404040;
+}
+
+#login_container {
+height:400px;
+width:600px;
+margin:20px 0 0 0px;
+padding: 10px 0 0 0;
+text-align: center;
+}
+
+#login_header {
+position:relative;
+width:auto;
+height:70px;
+background:transparent url(../_img/header_background_login.jpg);
+margin: 5px 0 0 0;
+}
+/*
+h1 {
+text-align:right;
+display:block;
+height:70px;
+background:transparent url(../_img/logo_buffalo.png) right no-repeat;
+}
+*/
+#dev_logo{
+float: left;
+top:10px;
+right:10px;
+color:#FFD384;
+width:200px;
+height:50px;
+padding: 10px 0px 0 0;
+margin: 10px 10px 0 7px;
+text-align: right;
+/*background:transparent url(../_img/tera_station.png) no-repeat;*/
+}
+
+.dev_logo_ls{
+float: left;
+top:10px;
+right:10px;
+color:#FFD384;
+width:200px;
+height:50px;
+padding: 10px 0px 0 0;
+margin: 10px 10px 0 7px;
+text-align: right;
+background:transparent url(../_img/link_station.png) no-repeat;
+}
+.dev_logo_ts{
+float: left;
+top:10px;
+right:10px;
+color:#FFD384;
+width:200px;
+height:50px;
+padding: 10px 0px 0 0;
+margin: 10px 10px 0 7px;
+text-align: right;
+background:transparent url(../_img/tera_station.png) no-repeat;
+}
+.dev_logo_ts_iscsi{
+float: left;
+top:10px;
+right:10px;
+color:#FFD384;
+width:200px;
+height:50px;
+padding: 10px 0px 0 0;
+margin: 10px 10px 0 7px;
+text-align: right;
+background:transparent url(../_img/tera_station_iscsi.png) no-repeat;
+}
+
+#buff_logo {
+text-align:left;
+width:200px;
+margin:0 0 60px;
+float: right;
+top: 0;
+left:0 ;
+height:50px;
+padding: 0 0 0 0;
+margin: 0 0 0 0;
+background:transparent url(../_img/logo_buffalo.png) right 0 no-repeat;
+}
+
+#login_container_inner{
+width: 600px;
+height: 200px;
+margin: 5px 0 0 0;
+background:#FFF7E1;
+position: relative;
+left: 0;
+top:0;
+}
+#help{
+padding-top: 10px !important;
+}
+
+#help a {
+text-align:left;
+height: 0px;
+/*display: block;*/
+top: 0px;
+background:transparent url(../_img/icon_help.png) no-repeat;
+text-decoration:underline;
+padding:10px 0 0 28px;
+margin: 0 0 0 430px;
+
+}
+/*
+#help a {
+float:right;
+height:30px;
+width: 80px;
+background:transparent url(../_img/icon_help.png) no-repeat;
+margin: 10px 0 0 0;
+padding:5px 0px 0 0px;
+text-decoration:underline;
+}*/
+
+#external {
+padding-right: 15px !important;
+padding-left:5px !important;
+/*margin-top: 5px !important;*/
+margin-left: 5px !important;
+margin-right: 20px;
+text-align: left;
+
+background:transparent url(../_img/icon_external.png) no-repeat right !important;
+}
+
+#external_jp {
+padding-right: 15px !important;
+/*margin-top: 5px !important;*/
+margin-left: 400px !important;
+margin-right: 10px;
+text-align: left;
+background:transparent url(../_img/icon_external.png) no-repeat right !important;
+}
+
+#login_container_form {
+width: auto;
+height: 80px;
+padding:20px 100px 50px 100px;
+/*margin: 5px 0 0 0;*/
+background:#FFF7E1; 
+margin-top: 20px !important;
+}
+
+.login_form {
+width: 400px;
+height: auto;
+background: none;
+
+}
+.login_form_font {
+font:normal 14px;
+font-weight:bold;
+}
+
+.ux-ext-el-mask-msg div{
+padding:5px 10px 5px 12px;
+background:#fbfbfb url( '../ext/resources/images/default/grid/loading.gif' ) no-repeat 5px 5px;
+line-height:16px;
+}
+
+#login_footer{
+text-align: center;
+color: gray;
+background:#ECE6D8;
+height:9px; 
+padding:5px;
+}
+
+
+/* hide */
+.hidden, #buff_logo span, hr {
+position:absolute;
+left:-999em;
+width:1em;
+overflow:hidden;
+}
